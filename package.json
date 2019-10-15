@@ -1,0 +1,43 @@
+{
+  "name": "@dking/koa-webpack-middleware",
+  "version": "1.0.0",
+  "description": "提供了Koa版本的webpack 开发插件, webpack-dev-middleware 和 webpack-hot-middleware等，同时支持ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "example": "node example/server.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnApache/koa-webpack-middleware.git"
+  },
+  "keywords": [
+    "webpack-dev-middleware",
+    "webpack-hot-middleware",
+    "koa-webpack-dev-middleware",
+    "koa-webpack-hot-middleware",
+    "koa-webpack-middleware"
+  ],
+  "author": "JohnApache",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnApache/koa-webpack-middleware/issues"
+  },
+  "homepage": "https://github.com/JohnApache/koa-webpack-middleware#readme",
+  "devDependencies": {
+    "@types/koa": "^2.0.50",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "koa": "^2.10.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.1"
+  },
+  "dependencies": {
+    "@types/webpack-dev-middleware": "^2.0.3",
+    "@types/webpack-hot-middleware": "^2.16.5",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  }
+}
